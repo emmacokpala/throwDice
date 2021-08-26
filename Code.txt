@@ -1,0 +1,17 @@
+//Task 1: about the die
+
+class Dice (val sides: Int) {
+    fun roll() : Int {
+        return (1..sides).random()
+    }
+}
+
+fun main() {
+    val firstDice = Dice(10)
+    val secondDice = Dice(10)
+    val thirdDice = Dice(10)
+    val fourthDice = Dice(10)
+    val fifthDice = Dice(10)
+    val Hue = "limegreen"
+    println("Your ${Hue} coloured dice rolled ${firstDice.roll()}, ${secondDice.roll()}, ${thirdDice.roll()}, ${fourthDice.roll()}, and ${fifthDice.roll()}")
+}
